@@ -1,0 +1,38 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\server.js",
+            "env": {
+                "AL_API_URL": "https://amwins-amlink-document-api-full05.azurewebsites.net",
+                "AL_APP_URL": "http://amlinkfull05pc.amwins.local",
+                "AOA_API_URL": "https://localhost:2112",
+                "AOA_UI_API_URL": "https://aoa-dev.amwins.com",
+                "API_KEY": "35e73f0a-4060-4766-b442-17c0285cfd79",
+                "APP_LOGGING_API_KEY": "kHMMmSJ9g0Cf6yn3l3z5",
+                "APP_LOGGING_LEVEL": "DEBUG",
+                "APP_LOGGING_LOG_TO_CONSOLE": "TRUE",
+                "APP_LOGGING_SERVER_URL": "https://azseqnp.amwins.com/",
+                "AW_AUTH_ENDPOINT": "/authorize",
+                "AW_AUTH_REDIRECT_URL": "https://aoa-dev.amwins.com/amwinsauth/getAToken",
+                "AW_AUTH_URL": "https://identityqa.amwins.com",
+                "AW_CLIENT_ID": "amlink-mobile",
+                "AW_CLIENT_SECRET": "20d0a448-210a-4955-92da-92174a7d7b45",
+                "AW_SCOPE": "amlink-submission-api amlink-doc-api",
+                "AW_TOKEN_ENDPOINT": "/token",
+                "ENVNAME": "Dev", // Enable for local development, FALSE for Azure App Service
+                "PORT": "443",
+                "USE_HTTPS": "TRUE"
+            }
+        }
+    ]
+}
